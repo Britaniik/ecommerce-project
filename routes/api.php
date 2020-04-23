@@ -21,6 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::apiResource('/products','ProductsController');
 Route::group(['prefix'=>'products'],function(){
 
-Route::apiResource('/{proudct}/reviews','ReviewController');
+Route::apiResource('/{proudct}/reviews','ReviewController'); 
 
 });
